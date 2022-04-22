@@ -44,8 +44,27 @@ var swiper = new Swiper('.swiper', {
   }
 })
 
+/*scrollreveal*/
+const scrollReveal = ScrollReveal({ 
+  origin: 'top', 
+  distance: '30px', 
+  duration: 700, 
+  reset: false 
+})
+
+scrollReveal.reveal(
+  `#home .image, #home .text,
+  #about .image, #about .text,
+  #services .title, #services .card,
+  #updates .header, #updates .swiper,
+  #contact .text, #contact .links,
+  footer .brand, footer .social
+  `,
+ { interval: 100})
+
+
+
 window.addEventListener('scroll', function () {
   changeHeaderWhenScroll()
-  backToTop()
-  activateMenuAtCurrentSection()
+
 })

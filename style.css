@@ -595,7 +595,7 @@ nav .icon-menu {
 
 /*services*/
 .cards {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .card {
